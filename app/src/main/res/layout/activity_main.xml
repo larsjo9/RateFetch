@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/grey_for_edit_text"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp"
+        android:text="Please select the dates"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginRight="105dp"
+        android:background="@color/grey_for_edit_text"
+      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_date"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_gravity="center"/>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Date From"
+            android:layout_marginRight="15dp"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:focusable="false"
+            android:id="@+id/date_from"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_date"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_gravity="center"/>-->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Date To"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+
+                android:focusable="false"
+                android:id="@+id/date_to"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/color_primary_dark"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:id="@+id/btn_submit"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Reference rate-FBIL"
+        android:layout_span="3"
+        android:padding="14dip"
+        android:gravity="center"
+        android:background="#b0b0b0"
+        android:textColor="#000"/>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="2dp"
+            android:textSize="12sp"
+            android:layout_height="50dp"
+            android:text="Trade Date"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="1 USD"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_height="50dp"
+            android:padding="2dip" android:gravity="center"/>
+
+
+
+        <TextView
+            android:text="1 GBP"
+            android:layout_weight="1" android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_height="50dp"
+            android:padding="2dip" android:gravity="center"/>
+
+        <TextView
+            android:text="1 EURO"
+            android:layout_weight="1" android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_height="50dp"
+            android:padding="2dip" android:gravity="center"/>
+
+        <TextView
+             android:text="100 YEN"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:layout_weight="1" android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="2dip" android:gravity="center"/>
+
+    </TableRow>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewRecent"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+
+
+</LinearLayout>

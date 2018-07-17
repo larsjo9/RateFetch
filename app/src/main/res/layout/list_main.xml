@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+    <!-- Row 2 with 3 columns -->
+
+
+<TableRow
+android:id="@+id/tableRow1"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<TextView
+    android:id="@+id/tv"
+    android:text="Trade Date"
+    android:layout_weight="1"
+    android:background="#dcdcdc"
+    android:textColor="#000000"
+    android:padding="2dip"
+    android:textSize="10sp"
+    android:gravity="center"/>
+
+<TextView
+     android:text="1 USD"
+    android:layout_weight="1"
+    android:id="@+id/tv2"
+    android:background="#d3d3d3"
+    android:textColor="#000000"
+    android:padding="2dip"
+    android:textSize="10sp" android:gravity="center"/>
+
+
+
+<TextView
+    android:id="@+id/tv3" android:text="1 GBP"
+    android:layout_weight="1" android:background="#cac9c9"
+    android:textColor="#000000"
+    android:padding="2dip"
+    android:textSize="10sp" android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv4" android:text="1 EURO"
+        android:layout_weight="1" android:background="#cac9c9"
+        android:textColor="#000000"
+        android:padding="2dip"
+        android:textSize="10sp" android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv5" android:text="100 YEN"
+        android:layout_weight="1" android:background="#cac9c9"
+        android:textColor="#000000"
+        android:padding="2dip"
+        android:textSize="10sp" android:gravity="center"/>
+
+</TableRow>
+
+    </TableLayout>

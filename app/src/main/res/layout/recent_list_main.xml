@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+
+    android:elevation="2dp"
+    card_view:layout_dodgeInsetEdges="all"
+    card_view:layout_anchorGravity="center"
+    card_view:cardElevation="2dp"
+    card_view:cardCornerRadius="1dp"
+    android:layout_marginBottom="5dp"
+    card_view:layout_anchor="@color/gray_background"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Tuesday"
+    android:layout_weight="1"
+    android:textSize="12sp"
+    android:textAllCaps="true"
+    android:textColor="#FFF"
+    android:gravity="center"
+    android:background="@color/color_primary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAR - 2016"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:45 PM"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:background="@color/color_gray_light"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:background="#CCC"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/color_primary"
+                android:text="Mr.Nirav Kora"
+                android:id="@+id/healer_namee_recent"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="Mumbai"
+                android:id="@+id/healer_address_recent"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="REIKI"
+                android:id="@+id/therapy_name_recent"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/grey_for_edit_text"
+                android:text="Vee5"
+                android:id="@+id/therapy_booking_id_recent"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="24-Dec-2017"
+                android:id="@+id/therapy_date_recent"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
